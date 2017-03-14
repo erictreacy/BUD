@@ -1,8 +1,6 @@
 # Beyond Use Date Calculator
 
-
-
-__The page currently sits at 3.7KB after minification + gzipping__
+This is a tool that I made to use for the lab. I am always having to calculate expiration dates and I wanted to use something that I created -- but, you can use it too! ; ) 
 
 ##What we did to squeeze our website into as few kibbles as possible:
 - HTML/CSS/JavaScript minification
