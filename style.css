@@ -79,15 +79,14 @@ label{
 	padding-bottom: 15px;
 }
 
-a{
-	text-decoration: none;
-	background: linear-gradient(90deg, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.8) 100%);
-	background-position: left 1.25em;
-	background-repeat: no-repeat;
-	display: inline-block;
-	color: white;
-	background-size: 100% 1px;
-}
+ a:not(.btn) {
+            color: #08b;
+            text-decoration: none;
+            background-image: linear-gradient(transparent,transparent 93.75%,#0be 93.75%)
+        }
+a:not(.btn):hover {
+            background-image: linear-gradient(transparent,transparent 87.5%,#0be 87.5%)
+        }
 
 h2 + p{
 	opacity: .7;
