@@ -1,7 +1,7 @@
 {
   "name": "date-calculator",
   "version": "1.0.1",
-  "description": "A tiny date calculator app",
+  "description": "A Tool to Calculate Expiration Dates in Pharmaceutical Compounding Known as Beyond Use Date",
   "main": "app.js",
   "devDependencies": {},
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sunmockyang/date-calculator.git"
+    "url": "git+https://github.com/erictreacy/beyondusedate.git"
   },
   "keywords": [
     "calculator",
@@ -19,12 +19,12 @@
     "month",
     "year"
   ],
-  "author": "Sunmock Yang, Russell Baylis",
+  "author": "Eric Treacy",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sunmockyang/date-calculator/issues"
+    "url": "https://github.com/erictreacy/beyondusedate/issues"
   },
-  "homepage": "https://github.com/sunmockyang/date-calculator#readme",
+  "homepage": "https://github.com/erictreacy/beyondusedate#readme",
   "dependencies": {
     "compression": "^1.6.2",
     "express": "^4.14.0"
