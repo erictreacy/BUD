@@ -7,8 +7,6 @@
     <meta name="description" content="Date calculator">
     <meta name="keywords" content="calculate, dates">
     <meta name="robots" content="index, follow">
-    <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -21,16 +19,15 @@
         }
         
         body {
-            background: #fff;
             font-family: system-ui, sans-serif;
-            color: #000;
             -webkit-font-smoothing: antialiased;
             padding: 0 25px;
             box-sizing: border-box;
             overflow-x: hidden;
             line-height: 1.5;
             min-height: 100vh; 
-            font-color: #000
+            background-color: #111;
+            color: #fffceb
         }
         
         section {
@@ -44,7 +41,7 @@
         
         li {
             margin-bottom: 10px;
-            color: #000
+            color: #111
         }
         
         .wrap {
@@ -53,22 +50,21 @@
         }
             
         h1 {
-            font-size: 36px;
-            font-weight: bold;
+            font-size: 48px;
+            font-weight: 800;
             line-height: 1;
-            color: #000;
         }
         
         h1.title-page {
-            font-size: 36px;
-            font-weight: bold;
-            line-height: 1;
-            color: #000;
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.5;
             border-bottom: solid 2px;
         }
         
         h2 {
-            font-size: 32px;
+            font-size: 36px;
+          font-weight: 800
         }
         
         .input-wrap:nth-child(1) {
@@ -85,28 +81,34 @@
         
         input {
             width: 100%;
-            padding: 12px 20px;
-            font-size: 16px;
-            font-style: italic;
-            color: #272c30;
-            border-radius: 4px;
+            padding: 14px 22px;
+            font-size: 18px;
+            color: #111;
+            
+            border-radius: 6px;
             box-sizing: border-box;
         }
         
         label {
             display: block;
-            padding-bottom: 10px
+            padding-bottom: 10px;
+              color: #fffceb
         }
         
-        a:not(.btn) {
-            color: #08b;
-            text-decoration: none;
-            background-image: linear-gradient(transparent,transparent 93.75%,#0be 93.75%)
-        }
+          a {
+                color: inherit;
+                text-decoration: none;
+                border-bottom: 2px solid rgba(255, 252, 235, 0.3);
+            }
 
-        a:not(.btn):hover {
-            background-image: linear-gradient(transparent,transparent 87.5%,#0be 87.5%)
-        }
+            a:hover {
+                text-decoration: none;
+                border-bottom: 2px solid var(--white);
+            }
+
+            a:focus {
+                border-bottom: none;
+            }
         
         h2+p {
             opacity: .7
@@ -173,7 +175,7 @@
         }
         
         .submit {
-            background-color: white;
+            background-color: #fffceb;
             margin-top: 60px
         }
     </style>
@@ -183,7 +185,7 @@
 
     <section>
         <h1 class="title-page">Beyond Use Date</h1>
-        <span>A tool for calculating pharmaceutical expiration dates in the lab</span>
+        <span>A tool for calculating pharmaceutical expiration dates in the lab known as 'BUD'</span>
     </section>
     
     
@@ -206,7 +208,7 @@
     </section>
 
     <section>
-        <p><a target="_blank" href="https://erictreacy.me">Eric Treacy</a></p>
+        <p><a target="_blank" href="https://etreacy.me">Eric Treacy</a></p>
     </section>
 
 </div>
@@ -349,7 +351,7 @@
                     var n = t(Un[0], D[0], n);
                     n += t(Un[1], D[1], n), n += t(Un[2], D[2], n, "" === n), M.innerHTML = n + (D[0] > 0 || D[1] > 0 ? " (" + t(Un[2], D[3], "") + ")" : ""), p.innerHTML = "Between " + r(h) + " – " + r(v), s(l([i(D[0], Un[0]), i(D[1], Un[1]), i(D[2], Un[2])])), s(l([i(12 * D[0] + D[1], Un[1]), i(D[2], Un[2])])), s(l([i(Math.floor(D[3] / 7), "week"), i(D[3] % 7, Un[2])])), s(i(D[3], Un[2])), s(i(24 * D[3], "hour")), s(i(1440 * D[3], "minute")), s(i(86400 * D[3], "second")), s(i(864e5 * D[3], "millisecond")), "" !== w.innerHTML && b.classList.remove("hidden")
                 }
-            else if (M.innerHTML = "Input something, would ya...!", "" !== g || "" !== m) {
+            else if (M.innerHTML = "I'm waiting! 😉", "" !== g || "" !== m) {
                 var o = a(h, g),
                     u = a(v, m);
                 p.innerHTML = o + (o ? " – " : "") + u
