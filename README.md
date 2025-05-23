@@ -2,8 +2,6 @@
 
 A modern web application for calculating Beyond Use Dates (BUDs) in pharmaceutical compounding based on USP guidelines.
 
-![BUD Calculator Screenshot](/placeholder.svg?height=400&width=800&query=screenshot%20of%20a%20pharmaceutical%20beyond%20use%20date%20calculator%20web%20application)
-
 ## Overview
 
 The BUD Calculator is a tool designed for pharmacists and pharmacy technicians to quickly determine appropriate beyond-use dates for compounded preparations. It follows USP <795> and <797> guidelines for non-sterile and sterile preparations, respectively.
@@ -38,24 +36,24 @@ The BUD Calculator is a tool designed for pharmacists and pharmacy technicians t
 ### Setup
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/yourusername/bud-calculator.git
    cd bud-calculator
-   \`\`\`
+   ```
 
 2. Install dependencies:
-   \`\`\`bash
+   ```bash
    npm install
    # or
    yarn install
-   \`\`\`
+   ```
 
 3. Run the development server:
-   \`\`\`bash
+   ```bash
    npm run dev
    # or
    yarn dev
-   \`\`\`
+   ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
